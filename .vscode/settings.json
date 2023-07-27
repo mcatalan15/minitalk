@@ -1,0 +1,10 @@
+{
+	"files.associations": {
+		"minitalk.h": "c",
+		"__bit_reference": "c",
+		"bitset": "c",
+		"map": "c",
+		"unordered_map": "c",
+		"chrono": "c"
+	}
+}

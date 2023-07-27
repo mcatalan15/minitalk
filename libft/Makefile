@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: mcatalan <mcatalan@student.42barcelona.    +#+  +:+       +#+         #
+#    By: mcatalan@student.42barcelona.com <mcata    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/02/04 19:10:12 by mcatalan@st       #+#    #+#              #
-#    Updated: 2023/04/13 10:38:24 by mcatalan         ###   ########.fr        #
+#    Updated: 2023/07/27 19:00:10 by mcatalan@st      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -49,6 +49,7 @@ SRCS = 	ft_isalpha.c		\
 		ft_strmapi.c		\
 		ft_striteri.c		\
 		ft_putchar_fd.c		\
+		ft_putchar.c		\
 		ft_putstr_fd.c		\
 		ft_putendl_fd.c		\
 		ft_putnbr_fd.c		\
