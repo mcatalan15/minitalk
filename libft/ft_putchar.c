@@ -6,13 +6,13 @@
 /*   By: mcatalan@student.42barcelona.com <mcata    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/27 19:00:21 by mcatalan@st       #+#    #+#             */
-/*   Updated: 2023/07/27 19:01:12 by mcatalan@st      ###   ########.fr       */
+/*   Updated: 2023/08/07 17:53:15 by mcatalan@st      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_putchar(char c)
+void	ft_putchar(char c)
 {
 	write(1, &c, 1);
 }

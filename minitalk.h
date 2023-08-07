@@ -6,7 +6,7 @@
 /*   By: mcatalan@student.42barcelona.com <mcata    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/20 12:01:31 by mcatalan@st       #+#    #+#             */
-/*   Updated: 2023/07/27 13:11:56 by mcatalan@st      ###   ########.fr       */
+/*   Updated: 2023/08/07 17:55:58 by mcatalan@st      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,11 @@
 # include <stdlib.h>
 # include <sys/time.h>
 
+// server.c
+void	sig_handler(int signum);
 
+// client.c
+void	ft_binari(int pid, char msg);
+void	ft_print_error(void);
 
 #endif
