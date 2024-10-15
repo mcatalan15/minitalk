@@ -6,7 +6,7 @@
 /*   By: mcatalan@student.42barcelona.com <mcata    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/20 12:01:34 by mcatalan@st       #+#    #+#             */
-/*   Updated: 2023/08/07 18:29:28 by mcatalan@st      ###   ########.fr       */
+/*   Updated: 2023/12/12 11:12:44 by mcatalan@st      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,9 +44,7 @@ int	main(int argc, char **argv)
 		}
 		ft_printf("Server PID: %d\n", getpid());
 		while (1)
-		{
 			pause();
-		}
 	}
 	return (0);
 }
