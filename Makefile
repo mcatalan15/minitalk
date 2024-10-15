@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: mcatalan@student.42barcelona.com <mcata    +#+  +:+       +#+         #
+#    By: mcatalan <mcatalan@student.42barcelona.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/02/04 19:10:12 by mcatalan@st       #+#    #+#              #
-#    Updated: 2023/07/27 20:34:40 by mcatalan@st      ###   ########.fr        #
+#    Updated: 2023/10/04 12:38:34 by mcatalan         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,14 +28,9 @@ OBJS_C = $(SRCS_C:.c=.o)
 DEPS_S = $(SRCS_S:.c=.d)
 DEPS_C = $(SRCS_C:.c=.d)
 
-
-#OBJSBONUS = $(SRCSB:.c=.o)
-
 INCLUDE = -I./
 RM = rm -f
 CFLAGS = -Wall -Wextra -Werror
-
-#DEPS_BONUS = $(SRCSB:.c=.d)
 
 all: makelibft $(NSERVER) $(NCLIENT)
 
@@ -59,14 +54,6 @@ $(NSERVER): $(OBJS_S) $(LIBFT_D)$(LIBFT) $(FT_PRINTF_D)$(FT_PRINTF)
 $(NCLIENT): $(OBJS_C) $(LIBFT_D)$(LIBFT)  $(FT_PRINTF_D)$(FT_PRINTF)
 	$(CC) $(CFLAGS) $(OBJS_C) -o $@ $(LIBFT_D)$(LIBFT) $(FT_PRINTF_D)$(FT_PRINTF)
 -include $(DEPS_C)
-
-# bonus: $(BONUS)
-
-# $(BONUS) : $(OBJS) $(OBJSBONUS)
-
-# 	ar -rcs $(NAME) $(OBJS) $(OBJSBONUS)
-
-# -include $(DEPS_BONUS)
 
 clean:
 	@make clean --no-print-directory -C $(LIBFT_D)
